@@ -41,6 +41,9 @@ var Player = function() {
 }
 
 Player.prototype.update = function() {
+    if (player.y === -15) {
+        this.reset();
+    }
 }
 
 Player.prototype.render = function() {
