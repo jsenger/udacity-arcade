@@ -41,7 +41,6 @@ var Player = function() {
 }
 
 Player.prototype.update = function() {
-    
 }
 
 Player.prototype.render = function() {
@@ -60,8 +59,9 @@ Player.prototype.handleInput = function(key) {
     }
 }
 
-Player.prototype.reset = function() {
-
+Player.prototype.reset = function() {  
+    this.x = 202;
+    this.y = 400;
 }
 
 // Now instantiate your objects.
