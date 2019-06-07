@@ -33,7 +33,7 @@ var Player = function() {
 
 // Check victory
 Player.prototype.update = function() {
-    if (player.y === -15) {
+    if (this.y === -15) {
         this.reset();
     }
 }
