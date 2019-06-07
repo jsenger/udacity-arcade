@@ -96,6 +96,7 @@ var Engine = (function(global) {
         player.update();
     }
 
+    // Check player and enemy collision
     function checkCollisions() {
         allEnemies.forEach(function(enemy) {
             if(player.y === enemy.y && enemy.x + 50 > player.x && enemy.x < player.x + 50) {
