@@ -26,7 +26,7 @@ Enemy.prototype.render = function() {
 // a handleInput() method.
 var Player = function() {
     this.sprite = 'images/char-horn-girl.png';
-    this.x = 200;
+    this.x = 202;
     this.y = 400;
 }
 
@@ -37,7 +37,16 @@ Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
-Player.prototype.handleInput = function() {
+Player.prototype.handleInput = function(key) {
+    if (key === 'left' && this.x > 0) {
+        this.x -= 101;
+    } else if (key === 'up' && this.y > 0) {
+        this.y -= 83;
+    } else if (key === 'right' && this.x < 404) {
+        this.x += 101;
+    } else if (key === 'down' && this.y < 400) {
+        this.y += 83;
+    }
 }
 
 Player.prototype.reset = function() {
