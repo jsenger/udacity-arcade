@@ -1,6 +1,6 @@
 # Classic Arcade Game Project
 
-This is a project made for Udacity's Front-End Web Developer Nanodegree.
+This is a project made for Udacity's Front-End Web Developer Nanodegree. [You can access it by clickng here.](https://udacity-arcade.vercel.app/)
 
 ## Table of Contents
 
